@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="es-DO">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tu Guia RD | Calculadoras y guias utiles</title>
+    <meta
+      name="description"
+      content="Calculadoras y guias practicas para dinero, trabajo y tramites en Republica Dominicana."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegacion principal">
+        <a class="brand" href="#inicio" aria-label="Tu Guia RD inicio">
+          <span class="brand-mark">TG</span>
+          <span>
+            <strong>Tu Guia RD</strong>
+            <small>Herramientas practicas</small>
+          </span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
+          Menu
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#calculadoras">Calculadoras</a>
+          <a href="#guias">Guias</a>
+          <a href="#plan">Plan editorial</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Republica Dominicana</p>
+          <h1>Resuelve calculos y tramites comunes sin perder tiempo.</h1>
+          <p>
+            Herramientas claras para estimar pagos, organizar decisiones de dinero y entender
+            procesos diarios con lenguaje sencillo.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#calculadoras">Usar calculadoras</a>
+            <a class="button secondary" href="#guias">Ver guias</a>
+          </div>
+        </div>
+        <div class="quick-panel" aria-label="Resumen de herramientas">
+          <div>
+            <span class="metric">5</span>
+            <span>herramientas iniciales</span>
+          </div>
+          <div>
+            <span class="metric">8</span>
+            <span>guias base para crecer</span>
+          </div>
+          <div>
+            <span class="metric">100%</span>
+            <span>contenido propio</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div class="section-heading">
+          <p class="eyebrow">La idea</p>
+          <h2>Una web util antes que una web decorativa</h2>
+        </div>
+        <p>
+          Tu Guia RD esta pensada para atraer visitas de personas que buscan respuestas concretas:
+          calculos laborales, prestamos, impuestos, ahorro, documentos y pasos de tramites. Esa
+          utilidad es la base para crecer en Google y luego monetizar con AdSense, afiliados o
+          productos digitales.
+        </p>
+      </section>
+
+      <section class="section" id="calculadoras">
+        <div class="section-heading">
+          <p class="eyebrow">Herramientas</p>
+          <h2>Calculadoras iniciales</h2>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Calculadoras disponibles">
+          <button class="tab is-active" type="button" data-tab="prestaciones">Prestaciones</button>
+          <button class="tab" type="button" data-tab="prestamo">Prestamo</button>
+          <button class="tab" type="button" data-tab="sueldo">Sueldo neto</button>
+          <button class="tab" type="button" data-tab="itbis">ITBIS</button>
+          <button class="tab" type="button" data-tab="moneda">Moneda</button>
+        </div>
+
+        <div class="tool-grid">
+          <article class="tool is-active" id="tool-prestaciones" data-panel="prestaciones">
+            <div class="tool-copy">
+              <h3>Estimador de prestaciones laborales</h3>
+              <p>
+                Calcula una referencia inicial de cesantia y preaviso. Los resultados son
+                orientativos y deben verificarse con la normativa vigente o un profesional.
+              </p>
+            </div>
+            <form class="calculator" data-calculator="prestaciones">
+              <label>
+                Salario mensual RD$
+                <input name="salary" type="text" inputmode="decimal" placeholder="35000" required />
+              </label>
+              <label>
+                Anos trabajados
+                <input name="years" type="text" inputmode="numeric" placeholder="2" required />
+              </label>
+              <label>
+                Meses adicionales
+                <input name="months" type="text" inputmode="numeric" placeholder="6" />
+              </label>
+              <button class="button primary" type="submit">Calcular</button>
+              <output class="result" data-result="prestaciones">Ingresa los datos para ver el estimado.</output>
+            </form>
+          </article>
+
+          <article class="tool" id="tool-prestamo" data-panel="prestamo">
+            <div class="tool-copy">
+              <h3>Calculadora de prestamo</h3>
+              <p>
+                Estima una cuota mensual fija usando monto, plazo e interes anual. Ideal para
+                comparar opciones antes de solicitar credito.
+              </p>
+            </div>
+            <form class="calculator" data-calculator="prestamo">
+              <label>
+                Monto RD$
+                <input name="amount" type="text" inputmode="decimal" placeholder="250000" required />
+              </label>
+              <label>
+                Interes anual %
+                <input name="rate" type="text" inputmode="decimal" placeholder="18" required />
+              </label>
+              <label>
+                Plazo en meses
+                <input name="months" type="text" inputmode="numeric" placeholder="36" required />
+              </label>
+              <button class="button primary" type="submit">Calcular</button>
+              <output class="result" data-result="prestamo">Ingresa los datos para ver la cuota.</output>
+            </form>
+          </article>
+
+          <article class="tool" id="tool-sueldo" data-panel="sueldo">
+            <div class="tool-copy">
+              <h3>Estimador de sueldo neto</h3>
+              <p>
+                Resta descuentos basicos para visualizar cuanto podria quedarte disponible cada
+                mes. Las tasas se pueden ajustar manualmente.
+              </p>
+            </div>
+            <form class="calculator" data-calculator="sueldo">
+              <label>
+                Sueldo bruto RD$
+                <input name="gross" type="text" inputmode="decimal" placeholder="45000" required />
+              </label>
+              <label>
+                Descuento AFP %
+                <input name="afp" type="text" inputmode="decimal" value="2.87" required />
+              </label>
+              <label>
+                Descuento SFS %
+                <input name="sfs" type="text" inputmode="decimal" value="3.04" required />
+              </label>
+              <button class="button primary" type="submit">Calcular</button>
+              <output class="result" data-result="sueldo">Ingresa los datos para ver el neto.</output>
+            </form>
+          </article>
+
+          <article class="tool" id="tool-itbis" data-panel="itbis">
+            <div class="tool-copy">
+              <h3>Calculadora de ITBIS</h3>
+              <p>
+                Agrega o separa el ITBIS de un monto. Util para facturas, presupuestos y compras.
+              </p>
+            </div>
+            <form class="calculator" data-calculator="itbis">
+              <label>
+                Monto RD$
+                <input name="amount" type="text" inputmode="decimal" placeholder="10000" required />
+              </label>
+              <label>
+                ITBIS %
+                <input name="tax" type="text" inputmode="decimal" value="18" required />
+              </label>
+              <label>
+                Operacion
+                <select name="mode">
+                  <option value="add">Agregar ITBIS</option>
+                  <option value="remove">Separar ITBIS incluido</option>
+                </select>
+              </label>
+              <button class="button primary" type="submit">Calcular</button>
+              <output class="result" data-result="itbis">Ingresa los datos para ver el resultado.</output>
+            </form>
+          </article>
+
+          <article class="tool" id="tool-moneda" data-panel="moneda">
+            <div class="tool-copy">
+              <h3>Conversor de moneda</h3>
+              <p>
+                Convierte entre dolares y pesos usando la tasa que escribas. Asi evitamos mostrar
+                tasas desactualizadas.
+              </p>
+            </div>
+            <form class="calculator" data-calculator="moneda">
+              <label>
+                Cantidad
+                <input name="amount" type="text" inputmode="decimal" placeholder="100" required />
+              </label>
+              <label>
+                Tasa RD$ por US$
+                <input name="rate" type="text" inputmode="decimal" placeholder="60" required />
+              </label>
+              <label>
+                Conversion
+                <select name="mode">
+                  <option value="usdToDop">US$ a RD$</option>
+                  <option value="dopToUsd">RD$ a US$</option>
+                </select>
+              </label>
+              <button class="button primary" type="submit">Convertir</button>
+              <output class="result" data-result="moneda">Ingresa los datos para convertir.</output>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="guias">
+        <div class="section-heading">
+          <p class="eyebrow">Contenido</p>
+          <h2>Guias listas para desarrollar</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-card">
+            <span>Trabajo</span>
+            <h3>Como calcular tus prestaciones laborales</h3>
+            <p>Explicacion sencilla de salario diario, cesantia, preaviso y documentos utiles.</p>
+          </article>
+          <article class="guide-card">
+            <span>Dinero</span>
+            <h3>Como comparar un prestamo antes de firmar</h3>
+            <p>Cuota, interes, mora, seguro, cargos y preguntas que conviene hacer.</p>
+          </article>
+          <article class="guide-card">
+            <span>Tramites</span>
+            <h3>Documentos basicos que debes tener organizados</h3>
+            <p>Una lista practica para cedula, pasaporte, licencias, contratos y comprobantes.</p>
+          </article>
+          <article class="guide-card">
+            <span>Hogar</span>
+            <h3>Como preparar un presupuesto mensual simple</h3>
+            <p>Metodo facil para separar gastos fijos, deudas, ahorro y gastos variables.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section plan-section" id="plan">
+        <div class="section-heading">
+          <p class="eyebrow">Crecimiento</p>
+          <h2>Primer plan de contenido</h2>
+        </div>
+        <ol class="content-plan">
+          <li>Publicar 10 calculadoras con textos explicativos.</li>
+          <li>Crear 20 guias practicas de tramites, dinero y trabajo.</li>
+          <li>Conectar Search Console y enviar el sitemap.</li>
+          <li>Medir visitas con Analytics y mejorar las paginas mas buscadas.</li>
+          <li>Solicitar AdSense cuando el sitio tenga contenido suficiente y navegacion clara.</li>
+        </ol>
+      </section>
+
+      <section class="section trust-section">
+        <div class="section-heading">
+          <p class="eyebrow">Confianza</p>
+          <h2>Paginas necesarias antes de monetizar</h2>
+        </div>
+        <div class="legal-grid">
+          <article>
+            <h3>Sobre Tu Guia RD</h3>
+            <p>
+              Proyecto independiente creado para compartir herramientas y guias educativas para
+              usuarios en Republica Dominicana.
+            </p>
+          </article>
+          <article>
+            <h3>Politica de privacidad</h3>
+            <p>
+              La version final debe explicar uso de cookies, analitica, anuncios y formularios de
+              contacto antes de activar AdSense.
+            </p>
+          </article>
+          <article>
+            <h3>Aviso importante</h3>
+            <p>
+              Las calculadoras son estimaciones informativas. Para decisiones legales, fiscales o
+              financieras, el usuario debe confirmar con fuentes oficiales o profesionales.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contacto">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>Tu Guia RD</h2>
+          <p>
+            Correo del proyecto: <a href="mailto:tuguiardoficial@gmail.com">tuguiardoficial@gmail.com</a>
+          </p>
+        </div>
+        <a class="button secondary" href="#inicio">Volver arriba</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Tu Guia RD. Contenido educativo y herramientas orientativas.</p>
+      <p>Beta inicial sin anuncios activos.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
