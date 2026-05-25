@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tu-guia-rd.vercel.app/sitemap.xml
