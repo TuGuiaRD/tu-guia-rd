@@ -8,6 +8,14 @@
       name="description"
       content="Calculadoras y guias practicas para dinero, trabajo y tramites en Republica Dominicana."
     />
+    <link rel="canonical" href="https://tu-guia-rd.vercel.app/" />
+    <meta property="og:title" content="Tu Guia RD | Calculadoras y guias utiles" />
+    <meta
+      property="og:description"
+      content="Calculadoras y guias practicas para dinero, trabajo y tramites en Republica Dominicana."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tu-guia-rd.vercel.app/" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYHRRBV36V"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -18,6 +26,21 @@
       gtag("config", "G-GYHRRBV36V");
     </script>
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Tu Guia RD",
+        "url": "https://tu-guia-rd.vercel.app/",
+        "description": "Calculadoras y guias practicas para dinero, trabajo y tramites en Republica Dominicana.",
+        "inLanguage": "es-DO",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Tu Guia RD",
+          "url": "https://tu-guia-rd.vercel.app/"
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -35,6 +58,7 @@
         <div class="nav-links" id="nav-links">
           <a href="#calculadoras">Calculadoras</a>
           <a href="#guias">Guias</a>
+          <a href="sobre.html">Sobre</a>
           <a href="#plan">Plan editorial</a>
           <a href="#contacto">Contacto</a>
         </div>
@@ -291,6 +315,7 @@
               Proyecto independiente creado para compartir herramientas y guias educativas para
               usuarios en Republica Dominicana.
             </p>
+            <a class="inline-link" href="sobre.html">Leer mas</a>
           </article>
           <article>
             <h3>Politica de privacidad</h3>
@@ -298,6 +323,7 @@
               La version final debe explicar uso de cookies, analitica, anuncios y formularios de
               contacto antes de activar AdSense.
             </p>
+            <a class="inline-link" href="privacidad.html">Ver politica</a>
           </article>
           <article>
             <h3>Aviso importante</h3>
@@ -305,6 +331,7 @@
               Las calculadoras son estimaciones informativas. Para decisiones legales, fiscales o
               financieras, el usuario debe confirmar con fuentes oficiales o profesionales.
             </p>
+            <a class="inline-link" href="aviso-legal.html">Ver aviso</a>
           </article>
         </div>
       </section>
@@ -322,8 +349,17 @@
     </main>
 
     <footer class="site-footer">
-      <p>Tu Guia RD. Contenido educativo y herramientas orientativas.</p>
-      <p>Beta inicial sin anuncios activos.</p>
+      <div>
+        <p>Tu Guia RD. Contenido educativo y herramientas orientativas.</p>
+        <p>Beta inicial sin anuncios activos.</p>
+      </div>
+      <div class="footer-links" aria-label="Enlaces legales">
+        <a href="sobre.html">Sobre</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Terminos</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+      </div>
     </footer>
 
     <script src="app.js"></script>
