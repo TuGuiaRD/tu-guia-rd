@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es-DO">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora de sueldo neto RD | Tu Guia RD</title>
+    <meta
+      name="description"
+      content="Estima tu sueldo neto en Republica Dominicana restando AFP y SFS desde el sueldo bruto."
+    />
+    <link rel="canonical" href="https://tu-guia-rd.vercel.app/calculadora-sueldo-neto.html" />
+    <meta property="og:title" content="Calculadora de sueldo neto RD" />
+    <meta
+      property="og:description"
+      content="Calcula una referencia de sueldo neto con descuentos basicos de AFP y SFS."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://tu-guia-rd.vercel.app/calculadora-sueldo-neto.html" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYHRRBV36V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-GYHRRBV36V");
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegacion principal">
+        <a class="brand" href="index.html" aria-label="Tu Guia RD inicio">
+          <span class="brand-mark">TG</span>
+          <span>
+            <strong>Tu Guia RD</strong>
+            <small>Herramientas practicas</small>
+          </span>
+        </a>
+        <div class="nav-links static-links">
+          <a href="index.html#calculadoras">Calculadoras</a>
+          <a href="index.html#guias">Guias</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="index.html#contacto">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="tool-page">
+      <section class="tool-hero">
+        <p class="eyebrow">Trabajo</p>
+        <h1>Calculadora de sueldo neto</h1>
+        <p>
+          Estima cuanto podria quedarte disponible despues de descuentos basicos. Puedes ajustar los
+          porcentajes si necesitas probar otro escenario.
+        </p>
+      </section>
+
+      <section class="section tool-detail">
+        <div class="tool-copy">
+          <h2>Datos para calcular</h2>
+          <p>
+            Esta version resta AFP y SFS. El resultado se muestra antes de posibles descuentos de
+            ISR, prestamos, cooperativa, seguros privados u otros compromisos.
+          </p>
+        </div>
+        <form class="calculator" data-calculator="sueldo">
+          <label>
+            Sueldo bruto RD$
+            <input name="gross" type="text" inputmode="decimal" placeholder="45000" required />
+          </label>
+          <label>
+            Descuento AFP %
+            <input name="afp" type="text" inputmode="decimal" value="2.87" required />
+          </label>
+          <label>
+            Descuento SFS %
+            <input name="sfs" type="text" inputmode="decimal" value="3.04" required />
+          </label>
+          <button class="button primary" type="submit">Calcular</button>
+          <output class="result" data-result="sueldo">Ingresa los datos para ver el neto.</output>
+        </form>
+      </section>
+
+      <section class="section article-section">
+        <h2>Como interpretar el resultado</h2>
+        <p>
+          El sueldo bruto es el monto antes de descuentos. El sueldo neto es lo que recibes despues
+          de aplicar descuentos obligatorios y otros descuentos personales. Revisa tu volante de pago
+          para comparar cada concepto.
+        </p>
+        <p>
+          Si tienes un salario alto, confirma si aplica ISR y usa fuentes oficiales para validar
+          tasas actualizadas.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p>Tu Guia RD. Contenido educativo y herramientas orientativas.</p>
+      </div>
+      <div class="footer-links">
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Terminos</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
